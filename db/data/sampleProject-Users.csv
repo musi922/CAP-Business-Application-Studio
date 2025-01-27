@@ -1,4 +1,4 @@
-serId,name,role,status,email
+userId,name,role,status,email
 ADMIN001,John Admin,admin,active,john.admin@example.com
 DEV001,Jane Developer,developer,active,jane.dev@example.com
 EMP001,Bob Employee,employee,active,bob.emp@example.com
