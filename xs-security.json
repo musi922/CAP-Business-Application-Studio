@@ -1,6 +1,84 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "xsappname": "mycapproject",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Administrator access to all features"
+    },
+    {
+      "name": "$XSAPPNAME.Employee",
+      "description": "Employee access to specific features"
+    },
+    {
+      "name": "$XSAPPNAME.User",
+      "description": "Basic user access"
+    },
+    {
+      "name": "$XSAPPNAME.Developer",
+      "description": "Developer access for technical features"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "UserType",
+      "description": "User type",
+      "valueType": "string"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Administrator role",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ],
+      "attribute-references": [
+        {
+          "name": "UserType",
+          "values": ["admin"]
+        }
+      ]
+    },
+    {
+      "name": "Employee",
+      "description": "Employee role",
+      "scope-references": [
+        "$XSAPPNAME.Employee"
+      ],
+      "attribute-references": [
+        {
+          "name": "UserType",
+          "values": ["employee"]
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "description": "Basic user role",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ],
+      "attribute-references": [
+        {
+          "name": "UserType",
+          "values": ["user"]
+        }
+      ]
+    },
+    {
+      "name": "Developer",
+      "description": "Developer role",
+      "scope-references": [
+        "$XSAPPNAME.Developer"
+      ],
+      "attribute-references": [
+        {
+          "name": "UserType",
+          "values": ["developer"]
+        }
+      ]
+    }
+  ]
 }

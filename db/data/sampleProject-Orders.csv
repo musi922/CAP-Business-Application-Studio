@@ -1,0 +1,4 @@
+orderId,status,totalAmount
+ORD001,processed,1499.98
+ORD002,pending,299.99
+ORD003,shipped,199.99

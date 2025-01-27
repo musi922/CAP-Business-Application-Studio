@@ -1,0 +1,5 @@
+serId,name,role,status,email
+ADMIN001,John Admin,admin,active,john.admin@example.com
+DEV001,Jane Developer,developer,active,jane.dev@example.com
+EMP001,Bob Employee,employee,active,bob.emp@example.com
+USER001,Alice User,user,active,alice.user@example.com

@@ -18,5 +18,22 @@
   },
   "scripts": {
     "start": "cds-serve"
-  }
+  },
+    "cds": {
+      "requires": {
+        "uaa": {
+          "kind": "xsuaa",
+          "credentials": {
+          "tenant-mode": "dedicated"
+        }
+        },
+        "db": {
+          "kind": "sql"
+        },
+        "auth": {
+          "strategy": "JWT"
+        }
+      }
+    }
+  
 }
