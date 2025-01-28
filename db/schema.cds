@@ -2,7 +2,6 @@ namespace sampleProject;
 using { managed, cuid } from '@sap/cds/common';
 
 entity Users : managed, cuid {
-  userId      : String;
   name        : String;
   role        : String enum {
     admin; employee; user; developer;
@@ -11,7 +10,6 @@ entity Users : managed, cuid {
   email       : String;
 }
 entity Products : managed, cuid {
-  productId   : String;
   name        : String;
   description : String;
   category    : String;
@@ -19,7 +17,6 @@ entity Products : managed, cuid {
   stock       : Integer;
 }
 entity Orders : managed, cuid {
-  orderId     : String;
   user        : Association to Users;
   items       : Composition of many {
     product   : Association to Products;
@@ -49,7 +46,6 @@ entity Projects : managed, cuid {
 }
 
 entity TestCases : managed, cuid {
-  testId      : String;
   description : String;
   status      : String;
   project     : Association to Projects;

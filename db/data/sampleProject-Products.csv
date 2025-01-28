@@ -1,4 +1,4 @@
-productId,name,description,category,price,stock
-PROD001,Laptop Pro,High-end laptop,Electronics,1299.99,50
-PROD002,Smart Watch,Fitness tracker,Wearables,199.99,100
-PROD003,Office Chair,Ergonomic chair,Furniture,299.99,30
+ID,name,description,category,price,stock
+14111111-1111-1111-1111-111111111111,Laptop Pro,High-end laptop,Electronics,1299.99,50
+15111111-1111-1111-1111-111111111111,Smart Watch,Fitness tracker,Wearables,199.99,100
+16111111-1111-1111-1111-111111111111,Office Chair,Ergonomic chair,Furniture,299.99,30
